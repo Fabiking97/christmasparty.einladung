@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f5f7fa, #dbe4f0);
+  color: #333;
+}
+
+.landing {
+  background-image: url('https://source.unsplash.com/1600x900/?christmas,lights');
+  background-size: cover;
+  background-position: center;
+}
+
+.center-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  max-width: 500px;
+  margin: 100px auto;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #990000;
+}
+
+.login .form-box {
+  background: white;
+  padding: 40px;
+  max-width: 400px;
+  margin: 100px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
+#error-msg {
+  color: red;
+  margin-top: 10px;
+}
