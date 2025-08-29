@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Einladung bestätigen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login">
+  <div class="form-box">
+    <h2>🎅 Einladung bestätigen</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" placeholder="Vorname" required>
+      <input type="text" placeholder="Nachname" required>
+      <input type="email" placeholder="E-Mail-Adresse" required>
+      <input type="password" id="pw" placeholder="Passwort" required>
+      <input type="password" id="pw-confirm" placeholder="Passwort bestätigen" required>
+      <button type="submit">Einloggen</button>
+    </form>
+    <p id="error-msg"></p>
+  </div>
+
+  <script>
+    function validateForm() {
+      const pw = document.getElementById("pw").value;
+      const confirm = document.getElementById("pw-confirm").value;
+      if (pw !== confirm) {
+        document.getElementById("error-msg").textContent = "Passwörter stimmen nicht überein.";
+        return false;
+      }
+      alert("Danke für deine Anmeldung!");
+      return true;
+    }
+  </script>
+</body>
+</html>
